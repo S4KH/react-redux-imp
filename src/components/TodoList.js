@@ -3,11 +3,10 @@ import Todo from './Todo'
 
 class TodoList extends Component {
 
-
   render() {
     const { todos, onTodoClick } = this.props
     return (
-      <ol>
+      <ol style={{ listStyle: 'none' }}>
         {
             todos.map(todo =>
               <Todo
