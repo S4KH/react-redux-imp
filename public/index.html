@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
     <!--
       Notice the use of %PUBLIC_URL% in the tag above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -14,9 +15,24 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <style>
+      html, body, .col-md-12, .row {height: 100%;}
+      .row > div {
+        height:100%;
+      }
+      li {
+        cursor: pointer;
+      }
+      .row .col-sm-2 {
+        background-color:#f6fbfb;
+      }
+      .row .col-sm-4 {
+        background-color:#e5f3f3;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root" class="col-md-12"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
